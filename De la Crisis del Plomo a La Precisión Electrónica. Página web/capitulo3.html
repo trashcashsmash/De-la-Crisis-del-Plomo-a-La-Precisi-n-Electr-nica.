@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 3: Gestión Electrónica - Proyecto MCI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2>Capítulo 3</h2>
+            <h1>La Implementación de la Electrónica</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>El Cerebro: La ECU y el Transistor</h2>
+            <p>La clave para mitigar la contaminación es el control de precisión. Gracias al <strong>transistor</strong>, la ECU puede procesar millones de datos por segundo.</p>
+            
+            <div class="grid-laws">
+                <div class="law-card">
+                    <h3>Arquitectura NPN/PNP</h3>
+                    <p>La base de la lógica digital que permite a la ECU conmutar los inyectores con precisión de microsegundos.</p>
+                </div>
+                <div class="law-card">
+                    <h3>Cálculo en Tiempo Real</h3>
+                    <p>Mapeo constante de la carga del motor para inyectar la dosis exacta de combustible.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>La Sonda Lambda (λ) y el Lazo Cerrado</h2>
+            <p>Este sensor es el "ojo" en el escape. Sin él, la ECU trabajaría a ciegas.</p>
+            
+            
+
+            <div class="formula-box">
+                <p>Relación Estequiométrica Ideal:</p>
+                <p class="formula">λ = 1 (14.7:1)</p>
+            </div>
+
+            <blockquote>
+                <strong>Dato técnico:</strong> El convertidor catalítico solo funciona correctamente si la mezcla se mantiene en una "ventana" estrechísima alrededor de λ=1.
+            </blockquote>
+        </section>
+
+        <section>
+            <h2>Sensores Periféricos Críticos</h2>
+            <p>Para complementar el Word, aquí detallamos los sensores que alimentan la información de la ECU:</p>
+            <ul>
+                <li><strong>MAF (Masa de Aire):</strong> Determina cuánto aire entra para calcular el combustible.</li>
+                <li><strong>ECT (Temperatura):</strong> Fundamental para el enriquecimiento en frío (fase de máxima contaminación).</li>
+                <li><strong>TPS (Posición de Mariposa):</strong> Informa la intención de aceleración del conductor.</li>
+            </ul>
+        </section>
+
+        <div style="text-align: center; padding: 40px;">
+            <a href="index.html" class="btn-back">← Volver al Panel de Control</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Angel Alfredo Villarreal Alvarado</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+/* 1. Variables Globales (Para cambiar colores fácilmente) */
+:root {
+    --bg-dark: #1a1c1e;         /* Gris muy oscuro (Fondo) */
+    --plomo-metal: #455a64;     /* Gris plomo industrial */
+    --electron-cyan: #00e5ff;   /* Cian eléctrico (Electrónica) */
+    --text-light: #eceff1;      /* Blanco suave para lectura */
+    --accent-red: #ff5252;      /* Rojo para alertas de contaminación */
+}
+
+/* 2. Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 3. Header y Tipografía */
+header {
+    background: linear-gradient(135deg, #263238 0%, #1a1c1e 100%);
+    padding: 60px 0;
+    border-bottom: 3px solid var(--electron-cyan);
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    color: var(--electron-cyan);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--plomo-metal);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 4. Navegación */
+nav {
+    background: #263238;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+}
+
+nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--electron-cyan);
+    background: rgba(0, 229, 255, 0.1);
+}
+
+/* 5. Secciones y Contenido */
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid #37474f;
+}
+
+h2 {
+    color: var(--electron-cyan);
+    margin-bottom: 20px;
+    border-left: 5px solid var(--electron-cyan);
+    padding-left: 15px;
+}
+
+blockquote {
+    background: #263238;
+    padding: 20px;
+    border-radius: 8px;
+    font-style: italic;
+    border-left: 5px solid var(--plomo-metal);
+    margin: 20px 0;
+}
+
+/* 6. Tabla de Contaminantes */
+.table-container {
+    overflow-x: auto;
+    margin: 30px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #263238;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #37474f;
+}
+
+th {
+    background-color: var(--plomo-metal);
+    color: white;
+}
+
+tr:hover {
+    background-color: rgba(0, 229, 255, 0.05);
+}
+
+/* 7. Footer */
+footer {
+    text-align: center;
+    padding: 40px;
+    color: var(--plomo-metal);
+    font-size: 0.9rem;
+}
+/* Estilos para el Capítulo 1 */
+.grid-laws {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.law-card {
+    background: #263238;
+    padding: 20px;
+    border-radius: 10px;
+    border-top: 4px solid var(--electron-cyan);
+    transition: transform 0.3s;
+}
+
+.law-card:hover {
+    transform: translateY(-5px);
+}
+
+.law-card h3 {
+    color: var(--electron-cyan);
+    margin-bottom: 10px;
+}
+
+.steps-list {
+    background: rgba(0, 229, 255, 0.05);
+    padding: 30px;
+    border-radius: 10px;
+    list-style-position: inside;
+}
+
+.formula-box {
+    text-align: center;
+    background: #101214;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    border: 1px dashed var(--electron-cyan);
+}
+
+.formula {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--electron-cyan);
+}
+
+code {
+    background: #000;
+    padding: 2px 5px;
+    color: #ff5252;
+}
